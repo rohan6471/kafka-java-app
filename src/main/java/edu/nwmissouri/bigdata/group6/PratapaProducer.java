@@ -35,7 +35,7 @@ public class PratapaProducer{
     org.apache.kafka.clients.producer.Producer producer = new KafkaProducer(configProperties);
 
     // Make our own messages - create your custom logic here
-    String msg="Welcome to Number Guess Game!!";
+    String msg="Calulate your interest with rate 12% per annum!";
     ProducerRecord<String, String> rec1 = new ProducerRecord<String, String>(topicName, msg);
     producer.send(rec1);
 
@@ -46,10 +46,9 @@ public class PratapaProducer{
     }
 
     // still allow input from keyboard
-	System.out.println("Guess a number and lets check your luck");
-    String line = in.nextLine();
+	    String line = in.nextLine();
     while (!line.equals("exit")) {
-      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, guessNumber1(line));
+      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, interestFromInput(line));
       producer.send(rec);
       line = in.nextLine();
     }
@@ -58,19 +57,23 @@ public class PratapaProducer{
     producer.close();
 
   }
-  public String interest(String value){
-      int[] principal=[1400,13000,2500,1500,10000,2300,1100,54000,2560,2345];
+  private static String interest(){
+      int[] principal= {1400,13000,2500,1500,10000,2300,1100,54000,2560,2345};
+      Random r=new Random();
+      int num=r.nextInt(10-1)+1;
+      int value=principal[num];
+      float  rate,  time; // principal amount, rate, time and simple interest respectively  
+   rate = 12; time = 2; 
+   float interest = (value*rate*time)/100;
+   return ""+interest;
   }
   
   
-    public String interest1(String value){
+    private static String interestFromInput(String value){
 int val=Integer.parseInt(value);
-float p, r,  t; // principal amount, rate, time and simple interest respectively  
-   r = 12; t = 2; 
-   float interest = (val*r*t)/100;
+float rate,  time; // principal amount, rate, time and simple interest respectively  
+   rate = 12; time= 2; 
+   float interest = (val*rate*time)/100;
    return ""+interest;
 }
 }
-
-
-
