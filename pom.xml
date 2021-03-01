@@ -61,7 +61,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>com.spnotes.kafka.simple.Producer</mainClass>
+              <mainClass>edu.nwmissouri.bigdata.group6</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>

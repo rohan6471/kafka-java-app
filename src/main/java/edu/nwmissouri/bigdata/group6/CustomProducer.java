@@ -35,6 +35,9 @@ public class CustomProducer{
     org.apache.kafka.clients.producer.Producer producer = new KafkaProducer(configProperties);
 
     // Make our own messages - create your custom logic here
+    String msg="Welcome to Number Guess Game!!";
+    ProducerRecord<String, String> rec1 = new ProducerRecord<String, String>(topicName, msg);
+    producer.send(rec1);
 
     for (int i = 1; i <= 10; i++) {
       String message = guessNumber();
@@ -57,13 +60,14 @@ public class CustomProducer{
   }
 
  private static String guessNumber() {
+
         int[] num_guess= {1,23,32,12,33,23,14,44,43,17};
         String str;
     	Random r=new Random();
     	int guessed_num=r.nextInt(50-10)+10;
     	int generated_num=r.nextInt(10-1)+1;
     	if(num_guess[generated_num]==guessed_num){
-    		str="your guessed the correct number";
+    		str="You guessed the correct number";
     	}
     	else{
     		str="Sorry! wrong guess. The number generated is "+num_guess[generated_num];

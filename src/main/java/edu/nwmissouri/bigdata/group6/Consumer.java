@@ -55,6 +55,7 @@ public class Consumer {
             kafkaConsumer = new KafkaConsumer<String, String>(configProperties);
             kafkaConsumer.subscribe(Arrays.asList(topicName));
             //Start processing messages
+            
             try {
                 while (true) {
                     ConsumerRecords<String, String> records = kafkaConsumer.poll(100);
