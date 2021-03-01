@@ -9,7 +9,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-public class CustomProducer{
+public class RohanProducer{
   private static Scanner in;
 
   public static void main(String[] argv) throws Exception {
