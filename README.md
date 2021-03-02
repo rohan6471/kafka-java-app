@@ -20,7 +20,7 @@ Then Go to project root folder where your pom.xml files exists and run the below
 - Start the Consumer     
 ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.Consumer test group1 ```  
 - Start the Custom Producer     
-```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.CustomProducer test ```  
+```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.RohanProducer test ```  
 
 
 
