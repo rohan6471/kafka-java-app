@@ -49,4 +49,11 @@ Then Go to project root folder where your pom.xml files exists and run the below
 - Neelesh Saladi- [My Github Profile](https://github.com/neeleshsaladi)
 - Chandrakanth Polisetty - [GitHub profile](https://github.com/Chandupolisetty)
 - Mohan Pratapa - [GitHub profile](https://github.com/mohanpratapa) 
+* I have worked on calculating the simple interest for a set of given principle amounts and displayed it on the consumer console.
+
+- To start the consumer
+```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.Consumer test group1 ``` 
+- To start the producer
+```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.PratapaProducer test ```
+
 - Kamal Reddy Donthireddy - [GitHub profile](https://github.com/Kamal4195) 
