@@ -27,6 +27,25 @@ Then Go to project root folder where your pom.xml files exists and run the below
 # Team Members
 
 - Suma Soma -[Git hub Profile link](https://github.com/suma-gitrep)
+
+* With my producer i tried to calculate the number of words for a string which is randomly selected.
+
+### Commands to find the number of words in a randomly selected string!! 
+
+- Start the Zookeeper service from root folder where you installed kafka    
+``` .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties ```   
+- Start the Kafka service from root folder where you installed kafka  
+``` .\bin\windows\kafka-server-start.bat .\config\server.properties ```  
+
+Then Go to project root folder where your pom.xml files exists and run the below commands from administrator powershell    
+
+- Compile and assemble the source code   
+```mvn clean compile assembly:single ```  
+- Start the Consumer     
+```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.Consumer somatopic group1 ```  
+- Start the Custom Producer     
+```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.SomaProducer somatopic ```  
+
 - Neelesh Saladi- [My Github Profile](https://github.com/neeleshsaladi)
 - Chandrakanth Polisetty - [GitHub profile](https://github.com/Chandupolisetty)
 - Mohan Pratapa - [GitHub profile](https://github.com/mohanpratapa) 
