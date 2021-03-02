@@ -34,10 +34,7 @@ public class SomaProducer{
 
 	    org.apache.kafka.clients.producer.Producer producer = new KafkaProducer(configProperties);
 
-	    // Make our own messages - create your custom logic here
-//	    String msg="Multiplying two numbers!!";
-//	    ProducerRecord<String, String> record = new ProducerRecord<String, String>(topicName, msg);
-//	    producer.send(record);
+	    
 	    
 	    for(int i=0;i<10;i++) {
 	      String message = wordCount();
