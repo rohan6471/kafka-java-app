@@ -65,3 +65,9 @@ Then Go to project root folder where your pom.xml files exists and run the below
 ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.PratapaProducer test ```
 
 - Kamal Reddy Donthireddy - [GitHub profile](https://github.com/Kamal4195) 
+- * I have worked on generating hash code for strings.
+
+- To start the consumer
+```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.Consumer test group1 ``` 
+- To start the producer
+```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.KamalProducer test ```
