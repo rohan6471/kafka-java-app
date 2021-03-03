@@ -48,6 +48,14 @@ Then Go to project root folder where your pom.xml files exists and run the below
 
 - Neelesh Saladi- [My Github Profile](https://github.com/neeleshsaladi)
 - Chandrakanth Polisetty - [GitHub profile](https://github.com/Chandupolisetty)
+* I have worked on multiplying two numbers and show it on the cosumer console.
+- Start the Consumer     
+```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.Consumer test group1 ```  
+
+- Start the Custom Producer     
+```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group6.ChanduProducer test ```  
+
+
 - Mohan Pratapa - [GitHub profile](https://github.com/mohanpratapa) 
 * I have worked on calculating the simple interest for a set of given principle amounts and displayed it on the consumer console.
 
